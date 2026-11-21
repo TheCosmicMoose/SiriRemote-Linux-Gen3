@@ -44,7 +44,7 @@ def handle_button_event(button):
         return
 
     if button & SiriRemote.BUTTON_HOME:
-        hid_input.add_key(Input.KEY_NEXTSONG)
+        hid_input.add_key(Input.KEY_HOME)
 
     if button & SiriRemote.BUTTON_VOLUME_UP:
         hid_input.add_key(Input.KEY_VOLUMEUP)
@@ -62,7 +62,7 @@ def handle_button_event(button):
         hid_input.add_key(Input.BTN_RIGHT)
 
     if button & SiriRemote.BUTTON_BACK:
-        hid_input.add_key(Input.KEY_PREVIOUSSONG)
+        hid_input.add_key(Input.KEY_BACK)
 
     if button & SiriRemote.BUTTON_MUTE:
         hid_input.add_key(Input.KEY_MUTE)
