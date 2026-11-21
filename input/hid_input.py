@@ -6,15 +6,15 @@ class Input:
     KEY_VOLUMEDOWN = e.KEY_VOLUMEDOWN
 
     KEY_PLAYPAUSE = e.KEY_PLAYPAUSE
-    KEY_NEXTSONG = e.KEY_NEXTSONG
-    KEY_PREVIOUSSONG = e.KEY_PREVIOUSSONG
+    KEY_HOME = e.KEY_HOME
+    KEY_BACK = e.KEY_BACK
 
     BTN_LEFT = e.BTN_LEFT
     BTN_RIGHT = e.BTN_RIGHT
 
     def __init__(self):
         cap = {e.EV_KEY: [self.KEY_VOLUMEUP, self.KEY_VOLUMEDOWN,
-                          self.KEY_PLAYPAUSE, self.KEY_NEXTSONG, self.KEY_PREVIOUSSONG,
+                          self.KEY_PLAYPAUSE, self.KEY_HOME, self.KEY_BACK,
                           self.BTN_LEFT, self.BTN_RIGHT],
                e.EV_REL: [e.REL_X, e.REL_Y]}
         self.__ui = UInput(cap, name='Siri Remote Wrapper')
